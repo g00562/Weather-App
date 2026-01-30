@@ -1,8 +1,9 @@
 # pip3 install requests
-
+from api import api
 import requests
 
-API_KEY = "d2e91e86245680dc0c39ed169d6b226b"
+# API_KEY = "d2e91e86245680dc0c39ed169d6b226b"
+API_KEY = api()
 
 def get_weather(city):
     url = f"http://api.openweathermap.org/data/2.5/weather?q={city}&appid={API_KEY}&units=metric"
