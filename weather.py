@@ -1,9 +1,10 @@
 # pip3 install requests
-from api import api
+from dotenv import load_dotenv
 import requests
+import os
+load_dotenv()
 
-# API_KEY = "d2e91e86245680dc0c39ed169d6b226b"
-API_KEY = api()
+API_KEY = os.getenv("API_KEY")
 
 def get_weather(city):
     url = f"http://api.openweathermap.org/data/2.5/weather?q={city}&appid={API_KEY}&units=metric"
