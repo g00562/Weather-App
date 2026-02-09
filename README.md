@@ -13,7 +13,8 @@ Python
 Requests library
 OpenWeatherMap API
 
-## How to Run
-1. Install requests
+## Get start with this
+1. Clone the repository
+    git clone 
 2. Add API key
 3. Run weather.py
